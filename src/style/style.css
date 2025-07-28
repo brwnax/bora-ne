@@ -10,24 +10,30 @@ body{
 button{
   background: #F5B70A;
   border-radius: 999px;
-  box-sizing: border-box;
-  color: #FFFFFF;
+  color: #FFF;
   cursor: pointer;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 24px;
-  opacity: 1;
-  outline: 0 solid transparent;
   padding: 8px 18px;
-  user-select: none;
-  width: fit-content;
-  word-break: break-word;
   border: 0;
 }
 
+button:hover{
+    background: #FFF;
+    color: #F5B70A;
+}
+
 footer{
-    position: fixed;
+    display: flex;
+    position: relative;
     bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background: #1D1D1B;
+    gap: 40px;
+    padding: 20px;
+    color: #EFEFEF;
 }
 
 .button-navbar{
@@ -53,13 +59,91 @@ footer{
 .navbar a:hover{
     color: #F5B70A;
 }
+.navbar img{
+    float: left;
+    width: 100px;
+}
 
 #inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 5% 8%;
     height: 100vh;
-    background-image: url(/src/teste.jpeg);
+    background-color: #F6E6DA;
+}
+
+#inicio p{
+    text-align: justify;
 }
 
 #rotas{
+    display: flex;
+    gap: 20px;
+    padding: 5% 8%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    background: #FFF;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 420px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover{
+    transform: translateY(-6px);
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content{
+    background: #1D1D1B;
+    color: #FFF;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-grow: 1;
+}
+
+.card-content h2{
+    font-size: 1.4rem;
+}
+
+.btn{
+    margin-top: auto;
+    display: inline-block;
+    background: #F5B70A;
+    color: #1D1D1B;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 999px;
+    align-self: flex-end;
+}
+
+.btn:hover{
+    background: #EFEFEF;
+}
+
+#planos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 5% 8%;
     height: 100vh;
-    background-color: #efefef;
+    background-color: #F6E6DA;    
 }
