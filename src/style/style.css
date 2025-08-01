@@ -87,38 +87,35 @@ footer{
     justify-content: center;
 }
 
-.card{
-    background: #FFF;
-    border-radius: 16px;
-    overflow: hidden;
-    width: 420px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
-    display: flex;
-    flex-direction: column;
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px 40px;
 }
 
-.card:hover{
-    transform: translateY(-6px);
+.card{
+    background: #FFF;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
 }
 
 .card img{
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 }
 
 .card-content{
-    background: #1D1D1B;
-    color: #FFF;
+    background-color: #1D1D1B;
+    color: #EFEFEF;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    flex-grow: 1;
 }
 
-.card-content h2{
-    font-size: 1.4rem;
+.card-content img{
+    margin: 0;
+    padding: 0;    
 }
 
 .btn{
@@ -135,6 +132,12 @@ footer{
 
 .btn:hover{
     background: #EFEFEF;
+}
+
+.text-cidades{
+    background: #1D1D1B;
+    border-radius: 50px 0 0 0;
+    padding: 12px;
 }
 
 #planos{
