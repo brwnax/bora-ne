@@ -157,13 +157,53 @@ footer{
     padding: 12px;
 }
 
-#planos{
+#apresentacao{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 5% 8%;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: space-evenly;
     height: 100vh;
     background-color: #F6E6DA;    
+}
+
+.icones-esquerda{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: 14px;
+}
+
+.icones-direita{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 14px;
+}
+
+.icones-esquerda img{
+    width: 15vh;
+    height: auto;
+    padding-inline: 10px;
+    border-radius: 100%;
+}
+
+.icones-direita img{
+    width: 15vh;
+    height: auto;
+    padding-inline: 10px;
+    border-radius: 100%;
+}
+
+.informacao{
+    display: flex;
+    align-items: center;
+    width: 50vh;
+    padding: 50px;
+}
+
+#tela-app{
+    width: 50vh;
+    height: 80vh;
+    
 }
