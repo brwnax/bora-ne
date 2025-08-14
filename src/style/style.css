@@ -24,18 +24,6 @@ button:hover{
     color: #F5B70A;
 }
 
-footer{
-    display: flex;
-    position: relative;
-    bottom: 0;
-    justify-content: center;
-    align-items: center;
-    background: #1D1D1B;
-    gap: 40px;
-    padding: 20px;
-    color: #EFEFEF;
-}
-
 .button-navbar{
     align-items: right;
 }
@@ -206,4 +194,51 @@ footer{
     width: 50vh;
     height: 80vh;
     
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #1D1D1B;
+    gap: 2rem;
+    padding: 50px;
+    color: #EFEFEF;
+}
+
+.info-footer{
+    text-align: left;
+}
+
+.info-footer h4{
+    color: #F5B70A;
+    margin-bottom: 16px;
+}
+
+.info-footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-footer ul li{
+    margin: 5px 0;
+}
+
+.info-footer ul li a{
+    color: #EFEFEF;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.info-footer ul li a:hover{
+    cursor: pointer;
+    color: #F5B70A;
+}
+
+.footer-bottom{
+    flex-basis: 100%;
+    text-align: center;
+    font-size: small;
 }
