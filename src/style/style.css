@@ -234,7 +234,7 @@ footer{
 
 .info-footer ul li a:hover{
     cursor: pointer;
-    color: #F5B70A;
+    text-decoration: underline;
 }
 
 .footer-bottom{
