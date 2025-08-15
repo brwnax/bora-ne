@@ -196,6 +196,44 @@ button:hover{
     
 }
 
+#avaliacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5% 8%;
+    height: 100vh;
+    background-color: #EFEFEF;  
+}
+
+.user-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 15px 40px;    
+}
+
+.user-card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 40rem;
+}
+
+.user-card-content{
+    background-color: #FFF;
+    padding-inline: 2rem;
+    color: #1D1D1B;
+    height: 21em;
+    width: 37em;
+    text-align: center;
+    align-content: space-around;
+    position: relative;
+    bottom: 3em;
+}
+
 footer{
     display: flex;
     flex-wrap: wrap;
