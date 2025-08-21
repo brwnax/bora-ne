@@ -1,55 +1,95 @@
+:root{
+    --black: #1D1D1B;
+    --yellow: #F5B70A;
+    --white: #FFFFFF;
+    --transition: background-color 0.3s ease;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+
+html{
+    scroll-behavior: smooth;
 }
 
-button{
-  background: #F5B70A;
+body{
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.8;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--black);
+    backdrop-filter: blur();
+    z-index: 1000;
+    transition: var(--transition);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav img{
+    float: left;
+    width: 100px;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-links a:hover{
+    color: var(--yellow);
+}
+
+.button{
+  background: var(--yellow);
   border-radius: 999px;
-  color: #FFF;
+  color: var(--white);
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
   line-height: 24px;
-  padding: 8px 18px;
+  padding: 0.75rem 1.5rem;
   border: 0;
 }
 
-button:hover{
+.button:hover{
     background: #FFF;
     color: #F5B70A;
+    transform: translateY(-2px);
 }
 
-.button-navbar{
+.nav-container .button{
     align-items: right;
-}
-
-.navbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #1D1D1B;
-    gap: 40px;
-    padding: 20px;
-}
-
-.navbar a{
-    text-decoration: none;
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-.navbar a:hover{
-    color: #F5B70A;
-}
-.navbar img{
-    float: left;
-    width: 100px;
 }
 
 #inicio{
