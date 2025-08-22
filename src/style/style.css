@@ -103,8 +103,17 @@ body{
     background-color: #F6E6DA;
 }
 
+#inicio h1{
+    font-size: 5rem;
+    line-height: 1;
+}
+
 #inicio p{
-    text-align: justify;
+    margin-top: 1.5rem;
+    text-align: center;
+    max-width: 800px;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 .subscribe-box {
@@ -116,6 +125,7 @@ body{
       background-color: #ffffff;
       width: 100%;
       max-width: 640px;
+      margin-top:-30px;
     }
 
     .subscribe-box .icon {
