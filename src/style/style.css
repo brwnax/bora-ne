@@ -96,7 +96,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
     padding: 5% 8%;
     height: 100vh;
@@ -106,6 +106,49 @@ body{
 #inicio p{
     text-align: justify;
 }
+
+.subscribe-box {
+      border: 2px solid #ffcc00;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      background-color: #ffffff;
+      width: 100%;
+      max-width: 640px;
+    }
+
+    .subscribe-box .icon {
+      color: #ffcc00;
+      font-size: 20px;
+      margin-right: 10px;
+    }
+
+    .subscribe-box input[type="email"] {
+      border: none;
+      outline: none;
+      flex: 1;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .subscribe-box input[type="email"]::placeholder {
+      color: #666;
+    }
+
+    .subscribe-box button {
+      background-color: #ffcc00;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .subscribe-box button:hover {
+      background-color: #e6b800;
+    }
 
 #rotas{
     display: flex;
