@@ -88,6 +88,10 @@ body{
     transform: translateY(-2px);
 }
 
+.button .avaliacao{
+    align-items: right;
+}
+
 .nav-container .button{
     align-items: right;
 }
