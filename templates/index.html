@@ -15,7 +15,7 @@
                 <a href="#inicio"><img src="{{ url_for('static', filename='assets/logo-bora-ne.png') }}" alt="logo-bora-ne"></a>
                 <div class="nav-links">
                     <a href="#inicio">Início</a>
-                    <a href="#rotas">Como Funciona</a>
+                    <a href="#apresentacao">Como Funciona</a>
                     <a href="#planos">Planos</a>
                     <a href="{{ url_for('sobre') }}">Sobre</a>
                     <a href="#ajuda">Ajuda</a>
@@ -52,7 +52,7 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus sint debitis eum error eaque, necessitatibus eius reprehenderit iste laboriosam distinctio!</p>
             <section class="cards">
                 <article class="card">
-                    <img src="/src/assets/garanhuns.jpg" alt="">  
+                    <img src="{{ url_for('static', filename='assets/garanhuns.jpg') }}" alt="">  
                     <div class="card-content">
                         <h2>Garanhuns</h2>
                         <p>Cidade culturalmente rica de Pernambuco, conhecida por seus festivais como o Festival de Inverno de Garanhuns e o Viva Garanhuns, sua arquitetura religiosa marcante e por revelar grandes nomes da música e das artes.</p>
@@ -61,7 +61,7 @@
                 </article>
 
                 <article class="card">
-                    <img src="/src/assets/garanhuns.jpg" alt="">  
+                    <img src="{{ url_for('static', filename='assets/garanhuns.jpg') }}" alt="">  
                     <div class="card-content">
                         <h2>Garanhuns</h2>
                         <p>Cidade culturalmente rica de Pernambuco, conhecida por seus festivais como o Festival de Inverno de Garanhuns e o Viva Garanhuns, sua arquitetura religiosa marcante e por revelar grandes nomes da música e das artes.</p>
@@ -70,7 +70,7 @@
                 </article>
 
                 <article class="card">
-                    <img src="/src/assets/garanhuns.jpg" alt="">  
+                    <img src="{{ url_for('static', filename='assets/garanhuns.jpg') }}" alt="">  
                     <div class="card-content">
                         <h2>Garanhuns</h2>
                         <p>Cidade culturalmente rica de Pernambuco, conhecida por seus festivais como o Festival de Inverno de Garanhuns e o Viva Garanhuns, sua arquitetura religiosa marcante e por revelar grandes nomes da música e das artes.</p>
@@ -149,56 +149,54 @@
         </section>
 
         <!-- PARTE DOS PLANOS -->
-        <div class="planos-container">
-  <div class="planos">
+    <section class="planos-container" id="planos">
+        <div class="planos">
     
-    <!-- Plano Gratuito -->
-    <div class="plano plano-basico">
-      <div class="cabecalho">Gratuito</div>
-      <h3>Básico</h3>
-      <p>Ideal para quem quer explorar o BoraNE sem custos.</p>
-      <div class="preco">R$ 0/mês</div>
-      <a href="#" class="botao">Começar</a>
-      <ul class="recursos">
-        <li>Acesso a pontos turísticos básicos</li>
-        <li>Criação de roteiros simples</li>
-        <li>Favoritar locais</li>
-      </ul>
-    </div>
+        <!-- Plano Gratuito -->
+        <div class="plano plano-basico">
+        <div class="cabecalho">Gratuito</div>
+        <h3>Básico</h3>
+        <p>Ideal para quem quer explorar o BoraNE sem custos.</p>
+        <div class="preco">R$ 0/mês</div>
+        <a href="#" class="botao">Começar</a>
+        <ul class="recursos">
+            <li>Acesso a pontos turísticos básicos</li>
+            <li>Criação de roteiros simples</li>
+            <li>Favoritar locais</li>
+        </ul>
+        </div>
 
-    <!-- Plano Intermediário -->
-    <div class="plano plano-melhor">
-      <div class="cabecalho">Mais Popular</div>
-      <h3>Pro</h3>
-      <p>Perfeito para viajantes que querem mais recursos.</p>
-      <div class="preco">R$ 7/mês</div>
-      <a href="#" class="botao">Assinar</a>
-      <ul class="recursos">
-        <li>Todos os recursos do Gratuito</li>
-        <li>Filtros avançados de busca</li>
-        <li>Criação de roteiros personalizados</li>
-        <li>Acesso a eventos e experiências locais</li>
-      </ul>
-    </div>
+        <!-- Plano Intermediário -->
+        <div class="plano plano-melhor">
+        <div class="cabecalho">Mais Popular</div>
+        <h3>Pro</h3>
+        <p>Perfeito para viajantes que querem mais recursos.</p>
+        <div class="preco">R$ 7/mês</div>
+        <a href="#" class="botao">Assinar</a>
+        <ul class="recursos">
+            <li>Todos os recursos do Gratuito</li>
+            <li>Filtros avançados de busca</li>
+            <li>Criação de roteiros personalizados</li>
+            <li>Acesso a eventos e experiências locais</li>
+        </ul>
+        </div>
 
-    <!-- Plano Premium -->
-    <div class="plano plano-premium">
-      
-      <div class="cabecalho">Vip</div>
-      <h3>Premium</h3>
-      <p>Para quem quer a experiência completa de viagem.</p>
-      <div class="preco">R$10/mês</div>
-      <a href="#" class="botao">Assinar</a>
-      <ul class="recursos">
-        <li>Todos os recursos do Explorar+</li>
-        <li>Ofertas exclusivas de parceiros</li>
-        <li>Descontos em hospedagens e restaurantes</li>
-        <li>Atendimento prioritário</li>
-      </ul>
-    </div>
-
-  </div>
-</div>
+        <!-- Plano Premium -->
+        <div class="plano plano-premium">
+        
+        <div class="cabecalho">Vip</div>
+        <h3>Premium</h3>
+        <p>Para quem quer a experiência completa de viagem.</p>
+        <div class="preco">R$10/mês</div>
+        <a href="#" class="botao">Assinar</a>
+        <ul class="recursos">
+            <li>Todos os recursos do Explorar+</li>
+            <li>Ofertas exclusivas de parceiros</li>
+            <li>Descontos em hospedagens e restaurantes</li>
+            <li>Atendimento prioritário</li>
+        </ul>
+        </div>
+    </section>
     </main>
 
     <footer>
