@@ -89,10 +89,6 @@ body{
     transform: translateY(-2px);
 }
 
-.button .avaliacao{
-    align-items: center;
-}
-
 .nav-container .button{
     align-items: right;
 }
@@ -320,6 +316,24 @@ body{
 .section-title{
     font-size: 3rem;
     text-align: center;
+}
+
+button .avaliacao{
+    text-align: center;
+}
+
+.button-avaliacao{
+    display: block;
+    width: 100%;
+    background: #facc15;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
 }
 
 .social-proof {
