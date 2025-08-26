@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BoraNE</title>
-    <link rel="icon" href="/src/assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/src/style/style.css">
+    <link rel="icon" href="{{ url_for('static', filename='assets/favicon.ico') }}" type="image/x-icon" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 </head>
 <body>
     <header class="header">
         <nav class="nav">
             <div class="nav-container">
-                <a href="#inicio"><img src="/src/assets/logo-bora-ne.png" alt="logo-bora-ne"></a>
+                <a href="#inicio"><img src="{{ url_for('static', filename='assets/logo-bora-ne.png') }}" alt="logo-bora-ne"></a>
                 <div class="nav-links">
                     <a href="#inicio">Início</a>
                     <a href="#rotas">Como Funciona</a>
