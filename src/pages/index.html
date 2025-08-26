@@ -17,7 +17,7 @@
                     <a href="#inicio">Início</a>
                     <a href="#rotas">Como Funciona</a>
                     <a href="#planos">Planos</a>
-                    <a href="#sobre">Sobre</a>
+                    <a href="{{ url_for('sobre') }}">Sobre</a>
                     <a href="#ajuda">Ajuda</a>
 
                     <button class="button">Inscreva-se</button>   
@@ -40,15 +40,9 @@
             <p class="subtitle">Monte a sua rota, compartilhe com os amigos e descubra a cidade de um jeito totalmente novo, desde lugares escondidos até os mais famosos.</p>
             <br>
 
-<<<<<<< HEAD
             <form class="subscribe-box" action="/subscribe" method="post">
                 <span class="icon">✉️</span>
                 <input type="email" name="email" placeholder="coloque seu melhor e-mail" required>
-=======
-            <form class="subscribe-box">
-                <span class="icon" ></span>
-                <input type="email" placeholder="coloque seu melhor e-mail" required>
->>>>>>> f7c22469b720f6ea7500bc0c2b8055de900b237d
                 <button type="submit">Inscreva-se</button>
 
             </form>

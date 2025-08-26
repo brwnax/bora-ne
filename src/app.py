@@ -26,6 +26,10 @@ def init_db():
         conn.commit()
     print('[INIT_DB] Banco criado em ', DB_PATH)
 
+@app.route("/sobre")
+def sobre():
+    return render_template("sobre.html")
+
 @app.route('/', endpoint='home')
 def home():
     with get_db_connection() as conn:
