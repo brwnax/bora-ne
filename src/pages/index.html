@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BoraNE</title>
+    <link rel="icon" href="/src/assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/src/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.cssf">
 </head>
 <body>
     <header class="header">
@@ -18,8 +20,8 @@
                     <a href="#sobre">Sobre</a>
                     <a href="#ajuda">Ajuda</a>
 
-                    <button class="button">Crie sua rota</button>   
-                </div>         
+                    <button class="button">Inscreva-se</button>   
+                </div>
             </div>
         </nav>
     </header>
@@ -38,9 +40,15 @@
             <p class="subtitle">Monte a sua rota, compartilhe com os amigos e descubra a cidade de um jeito totalmente novo, desde lugares escondidos até os mais famosos.</p>
             <br>
 
+<<<<<<< HEAD
             <form class="subscribe-box" action="/subscribe" method="post">
                 <span class="icon">✉️</span>
                 <input type="email" name="email" placeholder="coloque seu melhor e-mail" required>
+=======
+            <form class="subscribe-box">
+                <span class="icon" ></span>
+                <input type="email" placeholder="coloque seu melhor e-mail" required>
+>>>>>>> f7c22469b720f6ea7500bc0c2b8055de900b237d
                 <button type="submit">Inscreva-se</button>
 
             </form>
@@ -83,31 +91,31 @@
             <article class="icones-esquerda">
                 <div class="informacao">
                     <p>Explore rotas personalizadas com mapas fáceis de usar, cobrindo todo o Nordeste.</p>
-                    <img src="/src/default-image.png" alt="">
+                    <img src="/src/assets/way (1).png" alt="">
                 </div>
                 <div class="informacao">
                     <p>Descubra atrações turísticas, eventos e experiências únicas próximas a você.</p>
-                    <img src="/src/default-image.png" alt="">
+                    <img src="/src/assets/landmark (1).png" alt="">
                 </div>
                 <div class="informacao">
                     <p>Escolha entre aventura, cultura, gastronomia ou descanso e receba recomendações ideais.</p>
-                    <img src="/src/default-image.png" alt="">
+                    <img src="/src/assets/bagpack (1).png" alt="">
                 </div>
             </article>
             
-            <img src="/src/default-image.png" alt="" id="tela-app">
+            <img src="/src/assets/iPhone 15.png" alt="" id="tela-app">
             
             <article class="icones-direita">
                 <div class="informacao">
-                    <img src="/src/default-image.png" alt="">
+                    <img src="/src/assets/cloud-download (1).png" alt="">
                     <p>Salve rotas e dados para acessar mesmo sem conexão com a internet.</p>
                 </div>
                 <div class="informacao">
-                    <img src="/src/default-image.png" alt="">
+                    <img src="/src/assets/fireworks (1).png" alt="">
                     <p>Fique por dentro de festas, feiras, festivais e celebrações regionais.</p>
                 </div>
                 <div class="informacao">
-                    <img src="/src/default-image.png" alt="">
+                    <img src="/src/assets/restaurant (1).png" alt="">
                     <p>Encontre os melhores pratos e restaurantes típicos em cada cidade.</p>
                 </div>
             </article>
@@ -146,6 +154,58 @@
             </div>
             </div>
         </section>
+
+        <!-- PARTE DOS PLANOS -->
+        <div class="planos-container">
+  <div class="planos">
+    
+    <!-- Plano Gratuito -->
+    <div class="plano plano-basico">
+      <div class="cabecalho">Gratuito</div>
+      <h3>Básico</h3>
+      <p>Ideal para quem quer explorar o BoraNE sem custos.</p>
+      <div class="preco">R$ 0/mês</div>
+      <a href="#" class="botao">Começar</a>
+      <ul class="recursos">
+        <li>Acesso a pontos turísticos básicos</li>
+        <li>Criação de roteiros simples</li>
+        <li>Favoritar locais</li>
+      </ul>
+    </div>
+
+    <!-- Plano Intermediário -->
+    <div class="plano plano-melhor">
+      <div class="cabecalho">Mais Popular</div>
+      <h3>Pro</h3>
+      <p>Perfeito para viajantes que querem mais recursos.</p>
+      <div class="preco">R$ 4/mês</div>
+      <a href="#" class="botao">Assinar</a>
+      <ul class="recursos">
+        <li>Todos os recursos do Gratuito</li>
+        <li>Filtros avançados de busca</li>
+        <li>Criação de roteiros personalizados</li>
+        <li>Acesso a eventos e experiências locais</li>
+      </ul>
+    </div>
+
+    <!-- Plano Premium -->
+    <div class="plano plano-premium">
+      
+      <div class="cabecalho">Vip</div>
+      <h3>Premium</h3>
+      <p>Para quem quer a experiência completa de viagem.</p>
+      <div class="preco">R$ 8/mês</div>
+      <a href="#" class="botao">Assinar</a>
+      <ul class="recursos">
+        <li>Todos os recursos do Explorar+</li>
+        <li>Ofertas exclusivas de parceiros</li>
+        <li>Descontos em hospedagens e restaurantes</li>
+        <li>Atendimento prioritário</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
     </main>
 
     <footer>

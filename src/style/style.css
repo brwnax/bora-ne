@@ -89,7 +89,13 @@ body{
     transform: translateY(-2px);
 }
 
-/*INICIO*/
+.button .avaliacao{
+    align-items: right;
+}
+
+.nav-container .button{
+    align-items: right;
+}
 
 #inicio{
     display: flex;
@@ -267,14 +273,12 @@ body{
     display: flex;
     flex-direction: column;
     text-align: right;
-    font-size: 14px;
 }
 
 .icones-direita{
     display: flex;
     flex-direction: column;
     text-align: left;
-    font-size: 14px;
 }
 
 .icones-esquerda img,
@@ -283,7 +287,8 @@ body{
     max-width: 80px;
     height: auto;
     padding-inline: 10px;
-    border-radius: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .informacao{
@@ -291,12 +296,12 @@ body{
     align-items: center;
     width: 100%;
     max-width: 400px;
-    padding: 20 0px;
+    margin: 20 0px;
 }
 
 #tela-app{
-    width: 300px;
-    height: 500px;
+    width: 400px;
+    height: auto;
     object-fit: contain;
     margin: 40px;
 }
@@ -412,8 +417,129 @@ body{
   color: var(--gray-medium);
 }
 
-/* FOOTER */
 
+/* sessão planos */
+.planos-container {
+    max-width: 1100px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.planos-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.planos {
+  display: flex;
+  justify-content: center;   
+  align-items: stretch;      
+  gap: 20px;
+  flex-wrap: wrap;           
+}
+
+.plano {
+  flex: 1;                  /* todos crescem igualmente */
+  max-width: 300px;         /* limite de largura */
+  min-width: 250px;         /* não deixa ficar muito estreito */
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);         
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.plano:hover {
+  transform: translateY(-5px);
+}
+
+.plano .cabecalho {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.plano-basico .cabecalho {
+    background: #22c55e;
+    color: #fff;
+}
+
+.plano-melhor .cabecalho {
+    background: #3b82f6;
+    color: #fff;
+}
+
+.plano-premium .cabecalho {
+    background: #a855f7;
+    color: #fff;
+}
+
+.plano h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.plano p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.preco {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #111;
+}
+
+.botao {
+    display: block;
+    width: 100%;
+    background: #facc15;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.botao:hover {
+    background: #eab308;
+}
+
+.recursos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.recursos li {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 14px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.recursos li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #22c55e;
+    font-weight: bold;
+}
+
+/* SESSÃO DO FOOTER */
+/* FOOTER */
 footer{
     display: flex;
     flex-direction: row;
