@@ -18,10 +18,35 @@ def init_db():
         print('[INT_DB] Criando novo banco...')
         with get_db_connection() as conn:
             conn.executescript('''
-                CREATE TABLE produtos (
+                CREATE TABLE inscritos (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
                     email TEXT NOT NULL
                     )
             ''')
         conn.commit()
     print('[INIT_DB] Banco criado em ', DB_PATH)
+
+@app.route('/', endpoint='home')
+def home():
+    with get_db_connection() as conn:
+        inscritos = conn.execute(
+            "SELECT id, email FROM inscritos ORDER BY id"
+        ).fetchall()
+    return render_template('index.html', inscritos=inscritos)
+
+@app.route('/subscribe', methods=['POST'])
+def subscribe():
+    email = request.form.get('email')
+
+    if not email:
+        flash("Você precisa inserir um email válido!", "error")
+        return redirect(url_for('home'))
+    try:
+        with get_db_connection() as conn:
+            conn.execute('INSERT INTO inscritos (email) VALUES (?)', (email,))
+            conn.commit()
+        flash("Obrigado(a) por se inscrever!", "success")
+    except sqlite3.IntegrityError:
+        flash("Esse email já está inscrito!", "info")
+    
+    return redirect(url_for('home'))

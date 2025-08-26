@@ -26,14 +26,29 @@
         </nav>
     </header>
     <main>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="flash-messages">
+                {% for category, message in messages %}
+                    <div class="flash {{ category }}">{{ message }}</div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
         <section id="inicio">
             <h1 class="main-title">Descubra, crie <br> e compartilhe roteiros!</h1>
             <p class="subtitle">Monte a sua rota, compartilhe com os amigos e descubra a cidade de um jeito totalmente novo, desde lugares escondidos até os mais famosos.</p>
             <br>
 
+<<<<<<< HEAD
+            <form class="subscribe-box" action="/subscribe" method="post">
+                <span class="icon">✉️</span>
+                <input type="email" name="email" placeholder="coloque seu melhor e-mail" required>
+=======
             <form class="subscribe-box">
                 <span class="icon" ></span>
                 <input type="email" placeholder="coloque seu melhor e-mail" required>
+>>>>>>> f7c22469b720f6ea7500bc0c2b8055de900b237d
                 <button type="submit">Inscreva-se</button>
 
             </form>
