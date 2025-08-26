@@ -20,18 +20,18 @@ def init_db():
             conn.executescript('''
                 CREATE TABLE inscritos (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    email TEXT NOT NULL
+                    email TEXT NOT NULL UNIQUE
                     )
             ''')
         conn.commit()
-    print('[INIT_DB] Banco criado em ', DB_PATH)
+        print('[INIT_DB] Banco criado em ', DB_PATH)
+    else:
+        print('[INIT_DB] Banco já existe em ', DB_PATH)
 
 @app.route('/', endpoint='home')
 def home():
     with get_db_connection() as conn:
-        inscritos = conn.execute(
-            "SELECT id, email FROM inscritos ORDER BY id"
-        ).fetchall()
+        inscritos = conn.execute("SELECT id, email FROM inscritos ORDER BY id").fetchall()
     return render_template('index.html', inscritos=inscritos)
 
 @app.route('/subscribe', methods=['POST'])
