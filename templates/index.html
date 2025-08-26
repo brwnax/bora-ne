@@ -40,14 +40,10 @@
             <p class="subtitle">Monte a sua rota, compartilhe com os amigos e descubra a cidade de um jeito totalmente novo, desde lugares escondidos até os mais famosos.</p>
             <br>
 
-<<<<<<< HEAD:src/pages/index.html
             <form class="subscribe-box" action="/subscribe" method="post">
-=======
-            <form class="subscribe-box" action="{{ url_for('subscribe') }}" method="post">
->>>>>>> 6242633e77d5c8da5730de2443e7cde771c395b7:templates/index.html
                 <span class="icon">✉️</span>
                 <input type="email" name="email" placeholder="coloque seu melhor e-mail" required>
-                <button type="submit">Inscreva-se</button>
+                <button type="submit" >Inscreva-se</button>
             </form>
 
         </section>
@@ -88,15 +84,15 @@
             <article class="icones-esquerda">
                 <div class="informacao">
                     <p>Explore rotas personalizadas com mapas fáceis de usar, cobrindo todo o Nordeste.</p>
-                    <img src="/src/assets/way (1).png" alt="">
+                    <img src="{{ url_for('static', filename='assets/way (1).png') }}" alt="">
                 </div>
                 <div class="informacao">
                     <p>Descubra atrações turísticas, eventos e experiências únicas próximas a você.</p>
-                    <img src="/src/assets/landmark (1).png" alt="">
+                    <img src="{{ url_for('static', filename='assets/landmark (1).png') }}" alt="landmark (1).png">
                 </div>
                 <div class="informacao">
                     <p>Escolha entre aventura, cultura, gastronomia ou descanso e receba recomendações ideais.</p>
-                    <img src="/src/assets/bagpack (1).png" alt="">
+                    <img src="{{ url_for('static', filename='assets/bagpack (1).png') }}" alt="">
                 </div>
             </article>
             
