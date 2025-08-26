@@ -6,6 +6,7 @@
     <title>BoraNE</title>
     <link rel="icon" href="/src/assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/src/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.cssf">
 </head>
 <body>
     <header class="header">
@@ -19,19 +20,19 @@
                     <a href="#sobre">Sobre</a>
                     <a href="#ajuda">Ajuda</a>
 
-                    <button class="button">Crie sua rota</button>   
-                </div>         
+                    <button class="button">Inscreva-se</button>   
+                </div>
             </div>
         </nav>
     </header>
     <main>
         <section id="inicio">
-            <h1>Descubra, crie <br> e compartilhe roteiros!</h1>
-            <p>Monte a sua rota, compartilhe com os amigos e descubra a cidade de um jeito totalmente novo, desde lugares escondidos até os mais famosos.</p>
+            <h1 class="main-title">Descubra, crie <br> e compartilhe roteiros!</h1>
+            <p class="subtitle">Monte a sua rota, compartilhe com os amigos e descubra a cidade de um jeito totalmente novo, desde lugares escondidos até os mais famosos.</p>
             <br>
 
             <form class="subscribe-box">
-                <span class="icon">✉️</span>
+                <span class="icon" ></span>
                 <input type="email" placeholder="coloque seu melhor e-mail" required>
                 <button type="submit">Inscreva-se</button>
 
@@ -138,6 +139,58 @@
             </div>
             </div>
         </section>
+
+        <!-- PARTE DOS PLANOS -->
+        <div class="planos-container">
+  <div class="planos">
+    
+    <!-- Plano Gratuito -->
+    <div class="plano plano-basico">
+      <div class="cabecalho">Gratuito</div>
+      <h3>Básico</h3>
+      <p>Ideal para quem quer explorar o BoraNE sem custos.</p>
+      <div class="preco">R$ 0/mês</div>
+      <a href="#" class="botao">Começar</a>
+      <ul class="recursos">
+        <li>Acesso a pontos turísticos básicos</li>
+        <li>Criação de roteiros simples</li>
+        <li>Favoritar locais</li>
+      </ul>
+    </div>
+
+    <!-- Plano Intermediário -->
+    <div class="plano plano-melhor">
+      <div class="cabecalho">Mais Popular</div>
+      <h3>Pro</h3>
+      <p>Perfeito para viajantes que querem mais recursos.</p>
+      <div class="preco">R$ 4/mês</div>
+      <a href="#" class="botao">Assinar</a>
+      <ul class="recursos">
+        <li>Todos os recursos do Gratuito</li>
+        <li>Filtros avançados de busca</li>
+        <li>Criação de roteiros personalizados</li>
+        <li>Acesso a eventos e experiências locais</li>
+      </ul>
+    </div>
+
+    <!-- Plano Premium -->
+    <div class="plano plano-premium">
+      
+      <div class="cabecalho">Vip</div>
+      <h3>Premium</h3>
+      <p>Para quem quer a experiência completa de viagem.</p>
+      <div class="preco">R$ 8/mês</div>
+      <a href="#" class="botao">Assinar</a>
+      <ul class="recursos">
+        <li>Todos os recursos do Explorar+</li>
+        <li>Ofertas exclusivas de parceiros</li>
+        <li>Descontos em hospedagens e restaurantes</li>
+        <li>Atendimento prioritário</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
     </main>
 
     <footer>
