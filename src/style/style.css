@@ -89,7 +89,6 @@ body{
     transform: translateY(-2px);
 }
 
-<<<<<<< HEAD
 .button .avaliacao{
     align-items: right;
 }
@@ -97,9 +96,6 @@ body{
 .nav-container .button{
     align-items: right;
 }
-=======
-/*INICIO*/
->>>>>>> 16fa7b730c512cab70912652c0aeef8db384156e
 
 #inicio{
     display: flex;
@@ -422,7 +418,7 @@ body{
   color: var(--gray-medium);
 }
 
-<<<<<<< HEAD
+
 /* sessão planos */
 .planos-container {
     max-width: 1100px;
