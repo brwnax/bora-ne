@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <link rel="icon" href="{{ url_for('static', filename='assets/favicon.ico') }}" type="image/x-icon" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="#inicio"><img src="{{ url_for('static', filename='assets/logo-bora-ne.png') }}" alt="logo-bora-ne"></a>
+                <div class="nav-links">
+                    <a href="#inicio">Início</a>
+                    <a href="#rotas">Como Funciona</a>
+                    <a href="#planos">Planos</a>
+                    <a href="{{ url_for('sobre') }}">Sobre</a>
+                    <a href="#ajuda">Ajuda</a>
+
+                    <button class="button">Inscreva-se</button>   
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cabeçalho da página Sobre -->
+    <section id="history">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossa Jornada</h2>
+                <p>Do sonho de dar visibilidade ao Nordeste para a criação de uma plataforma inovadora.</p>
+            </div>
+            
+            <div class="history-content">
+                <div class="history-text">
+                    <p>O BoraNE nasceu em 2025 com a missão de promover o turismo sustentável e dar mais espaço para os empreendedores nordestinos. Começamos como uma ideia simples: reunir rotas, dicas e oportunidades em um só lugar.</p>
+                    <p>E muito em breve, levaremos essa missão para o ambiente digital, conectando viajantes, moradores e negócios locais em uma única plataforma.</p>
+                </div>
+                <div class="history-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=80" alt="Equipe BoraNE">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="values">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossos Valores</h2>
+                <p>O que guia o BoraNE todos os dias</p>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Paixão pelo Nordeste</h3>
+                    <p>Celebramos a cultura e o povo nordestino em cada detalhe do que fazemos.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Inovação</h3>
+                    <p>Buscamos soluções criativas para promover turismo e negócios locais.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Parceria</h3>
+                    <p>Trabalhamos lado a lado com empreendedores e viajantes.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sustentabilidade</h3>
+                    <p>Incentivamos práticas conscientes para proteger o meio ambiente e a cultura.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BoraNE - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
+    
+</body>
+</html>
