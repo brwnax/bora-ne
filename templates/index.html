@@ -13,6 +13,14 @@
         <nav class="nav">
             <div class="nav-container">
                 <a href="#inicio"><img src="{{ url_for('static', filename='assets/logo-bora-ne.png') }}" alt="logo-bora-ne"></a>
+
+                <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+                <label for="menu-toggle" class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+
                 <div class="nav-links">
                     <a href="#inicio">Início</a>
                     <a href="#apresentacao">Como Funciona</a>
@@ -148,11 +156,8 @@
             </div>
         </section>
 
-        <!-- PARTE DOS PLANOS -->
     <section class="planos-container" id="planos">
         <div class="planos">
-    
-        <!-- Plano Gratuito -->
         <div class="plano plano-basico">
         <div class="cabecalho">Gratuito</div>
         <h3>Básico</h3>
@@ -166,7 +171,6 @@
         </ul>
         </div>
 
-        <!-- Plano Intermediário -->
         <div class="plano plano-melhor">
         <div class="cabecalho">Mais Popular</div>
         <h3>Pro</h3>
@@ -181,7 +185,6 @@
         </ul>
         </div>
 
-        <!-- Plano Premium -->
         <div class="plano plano-premium">
         
         <div class="cabecalho">Vip</div>
