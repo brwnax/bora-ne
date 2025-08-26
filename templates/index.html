@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoraNE</title>
+    <link rel="icon" href="{{ url_for('static', filename='assets/favicon.ico') }}" type="image/x-icon" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="#inicio"><img src="{{ url_for('static', filename='assets/logo-bora-ne.png') }}" alt="logo-bora-ne"></a>
+                <div class="nav-links">
+                    <a href="#inicio">Início</a>
+                    <a href="#rotas">Como Funciona</a>
+                    <a href="#planos">Planos</a>
+                    <a href="{{ url_for('sobre') }}">Sobre</a>
+                    <a href="#ajuda">Ajuda</a>
+
+                    <button class="button">Inscreva-se</button>   
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="flash-messages">
+                {% for category, message in messages %}
+                    <div class="flash {{ category }}">{{ message }}</div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+        <section id="inicio">
+            <h1 class="main-title">Descubra, crie <br> e compartilhe roteiros!</h1>
+            <p class="subtitle">Monte a sua rota, compartilhe com os amigos e descubra a cidade de um jeito totalmente novo, desde lugares escondidos até os mais famosos.</p>
+            <br>
+
+<<<<<<< HEAD:src/pages/index.html
+            <form class="subscribe-box" action="/subscribe" method="post">
+=======
+            <form class="subscribe-box" action="{{ url_for('subscribe') }}" method="post">
+>>>>>>> 6242633e77d5c8da5730de2443e7cde771c395b7:templates/index.html
+                <span class="icon">✉️</span>
+                <input type="email" name="email" placeholder="coloque seu melhor e-mail" required>
+                <button type="submit">Inscreva-se</button>
+            </form>
+
+        </section>
+        <section >
+            <h1>Tenha acesso a história das cidades </h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus sint debitis eum error eaque, necessitatibus eius reprehenderit iste laboriosam distinctio!</p>
+            <section class="cards">
+                <article class="card">
+                    <img src="/src/assets/garanhuns.jpg" alt="">  
+                    <div class="card-content">
+                        <h2>Garanhuns</h2>
+                        <p>Cidade culturalmente rica de Pernambuco, conhecida por seus festivais como o Festival de Inverno de Garanhuns e o Viva Garanhuns, sua arquitetura religiosa marcante e por revelar grandes nomes da música e das artes.</p>
+                        <a href="#" class="btn">Ver rotas</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="/src/assets/garanhuns.jpg" alt="">  
+                    <div class="card-content">
+                        <h2>Garanhuns</h2>
+                        <p>Cidade culturalmente rica de Pernambuco, conhecida por seus festivais como o Festival de Inverno de Garanhuns e o Viva Garanhuns, sua arquitetura religiosa marcante e por revelar grandes nomes da música e das artes.</p>
+                        <a href="#" class="btn">Ver rotas</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="/src/assets/garanhuns.jpg" alt="">  
+                    <div class="card-content">
+                        <h2>Garanhuns</h2>
+                        <p>Cidade culturalmente rica de Pernambuco, conhecida por seus festivais como o Festival de Inverno de Garanhuns e o Viva Garanhuns, sua arquitetura religiosa marcante e por revelar grandes nomes da música e das artes.</p>
+                        <a href="#" class="btn">Ver rotas</a>
+                    </div>
+                </article>
+            </section>
+        </section>
+        
+        <section id="apresentacao">
+            <article class="icones-esquerda">
+                <div class="informacao">
+                    <p>Explore rotas personalizadas com mapas fáceis de usar, cobrindo todo o Nordeste.</p>
+                    <img src="/src/assets/way (1).png" alt="">
+                </div>
+                <div class="informacao">
+                    <p>Descubra atrações turísticas, eventos e experiências únicas próximas a você.</p>
+                    <img src="/src/assets/landmark (1).png" alt="">
+                </div>
+                <div class="informacao">
+                    <p>Escolha entre aventura, cultura, gastronomia ou descanso e receba recomendações ideais.</p>
+                    <img src="/src/assets/bagpack (1).png" alt="">
+                </div>
+            </article>
+            
+            <img src="/src/assets/iPhone 15.png" alt="" id="tela-app">
+            
+            <article class="icones-direita">
+                <div class="informacao">
+                    <img src="/src/assets/cloud-download (1).png" alt="">
+                    <p>Salve rotas e dados para acessar mesmo sem conexão com a internet.</p>
+                </div>
+                <div class="informacao">
+                    <img src="/src/assets/fireworks (1).png" alt="">
+                    <p>Fique por dentro de festas, feiras, festivais e celebrações regionais.</p>
+                </div>
+                <div class="informacao">
+                    <img src="/src/assets/restaurant (1).png" alt="">
+                    <p>Encontre os melhores pratos e restaurantes típicos em cada cidade.</p>
+                </div>
+            </article>
+        </section>
+        <section id="avaliacoes">
+            <div class="container">
+            <h1 class="section-title">O que nossos usuários dizem</h1>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>"Encontrei o restaurante mais incrível em Recife graças às dicas da comunidade. A comida era autêntica e o preço justo!"</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar"></div>
+                    <div class="author-info">
+                    <span class="author-name">Maria Santos</span>
+                    <span class="author-location">São Paulo, SP</span>
+                    </div>
+                </div>
+                </div>
+                <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>"O festival que descobri em Salvador através do app foi uma experiência única. A comunidade realmente conhece os melhores eventos!"</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar"></div>
+                    <div class="author-info">
+                    <span class="author-name">João Silva</span>
+                    <span class="author-location">Rio de Janeiro, RJ</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div>
+                <button class="button avaliacao"> Escreva sua avaliação </button>
+            </div>
+            </div>
+        </section>
+
+        <!-- PARTE DOS PLANOS -->
+        <div class="planos-container">
+  <div class="planos">
+    
+    <!-- Plano Gratuito -->
+    <div class="plano plano-basico">
+      <div class="cabecalho">Gratuito</div>
+      <h3>Básico</h3>
+      <p>Ideal para quem quer explorar o BoraNE sem custos.</p>
+      <div class="preco">R$ 0/mês</div>
+      <a href="#" class="botao">Começar</a>
+      <ul class="recursos">
+        <li>Acesso a pontos turísticos básicos</li>
+        <li>Criação de roteiros simples</li>
+        <li>Favoritar locais</li>
+      </ul>
+    </div>
+
+    <!-- Plano Intermediário -->
+    <div class="plano plano-melhor">
+      <div class="cabecalho">Mais Popular</div>
+      <h3>Pro</h3>
+      <p>Perfeito para viajantes que querem mais recursos.</p>
+      <div class="preco">R$ 7/mês</div>
+      <a href="#" class="botao">Assinar</a>
+      <ul class="recursos">
+        <li>Todos os recursos do Gratuito</li>
+        <li>Filtros avançados de busca</li>
+        <li>Criação de roteiros personalizados</li>
+        <li>Acesso a eventos e experiências locais</li>
+      </ul>
+    </div>
+
+    <!-- Plano Premium -->
+    <div class="plano plano-premium">
+      
+      <div class="cabecalho">Vip</div>
+      <h3>Premium</h3>
+      <p>Para quem quer a experiência completa de viagem.</p>
+      <div class="preco">R$10/mês</div>
+      <a href="#" class="botao">Assinar</a>
+      <ul class="recursos">
+        <li>Todos os recursos do Explorar+</li>
+        <li>Ofertas exclusivas de parceiros</li>
+        <li>Descontos em hospedagens e restaurantes</li>
+        <li>Atendimento prioritário</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+    </main>
+
+    <footer>
+        <nav class="info-footer">
+            <ul>
+                <a href="#">Central de Ajuda</a>
+                <a href="#">Contato</a>
+                <a href="#">Política de Privacidade</a>
+            </ul>
+        </nav>
+        <p class="footer-bottom">
+            &copy; 2025 BoraNE. Todos os direitos reservados. Desenvolvido com ❤️ para o turismo nordestino.
+        </p>
+    </footer>
+</body>
+</html>
