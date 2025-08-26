@@ -39,7 +39,7 @@ body{
     margin-bottom: 40px;
 }
 
-.nav-container {
+.nav-container {    
   display: flex;
   justify-content: space-between;
   align-items: center;
