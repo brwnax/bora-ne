@@ -32,6 +32,10 @@ def init_db():
 def sobre():
     return render_template("sobre.html")
 
+@app.route("/ajuda")
+def sobre():
+    return render_template("ajuda.html")
+
 @app.route('/', endpoint='home')
 def home():
     with get_db_connection() as conn:
