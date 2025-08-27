@@ -559,6 +559,13 @@ button .avaliacao{
     padding-top: 120px;
 }
 
+.faq-header h2{
+    text-align: center;
+}
+
+.faq-header p{
+    margin-top: 10px;
+}
 
 #faq {
     margin-top: 100px;
@@ -640,6 +647,8 @@ button .avaliacao{
     font-size: 1rem;
     margin: 0;
 }
+
+
 
 /* -------CONTATO------- */
 .contact-section {
