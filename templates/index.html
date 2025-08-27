@@ -55,37 +55,48 @@
             </form>
 
         </section>
-        <section >
-            <h1>Tenha acesso a história das cidades </h1>
-            <p>Explore o rico patrimônio histórico e cultural de diversas cidades. De tradições festivas a monumentos icônicos, cada cidade possui suas próprias histórias e características únicas que encantam visitantes e moradores. Descubra como a arquitetura, as festividades e os eventos culturais moldaram o presente e o passado desses lugares.</p>
-            <section class="cards">
-                <article class="card">
-                    <img src="{{ url_for('static', filename='assets/garanhuns.jpg') }}" alt="">  
-                    <div class="card-content">
-                        <h2>Garanhuns</h2>
-                        <p>Cidade culturalmente rica de Pernambuco, conhecida por seus festivais como o Festival de Inverno de Garanhuns e o Viva Garanhuns, sua arquitetura religiosa marcante e por revelar grandes nomes da música e das artes.</p>
-                        <a href="#" class="btn">Ver rotas</a>
-                    </div>
-                </article>
 
-                <article class="card">
-                    <img src="{{ url_for('static', filename='assets/garanhuns.jpg') }}" alt="">  
-                    <div class="card-content">
-                        <h2>Garanhuns</h2>
-                        <p>Cidade culturalmente rica de Pernambuco, conhecida por seus festivais como o Festival de Inverno de Garanhuns e o Viva Garanhuns, sua arquitetura religiosa marcante e por revelar grandes nomes da música e das artes.</p>
-                        <a href="#" class="btn">Ver rotas</a>
-                    </div>
-                </article>
+        <section class="excursao-container">
 
-                <article class="card">
-                    <img src="{{ url_for('static', filename='assets/garanhuns.jpg') }}" alt="">  
-                    <div class="card-content">
-                        <h2>Garanhuns</h2>
-                        <p>Cidade culturalmente rica de Pernambuco, conhecida por seus festivais como o Festival de Inverno de Garanhuns e o Viva Garanhuns, sua arquitetura religiosa marcante e por revelar grandes nomes da música e das artes.</p>
-                        <a href="#" class="btn">Ver rotas</a>
+            <article class="excursao">
+                <figure>
+                    <img src="{{ url_for('static', filename='assets/garanhuns.jpg') }}" alt="Relógio das Flores - Garanhuns/PE">
+                    <figcaption>Garanhuns</figcaption>
+                </figure>
+                <div class="info">
+                    <p class="local">Conhecida por seus festivais como o Festival de Inverno de Garanhuns e o Viva Garanhuns, sua arquitetura religiosa marcante e por revelar grandes nomes da música e das artes.</p>
+                    <div class="avaliacao">
+                        <span class="nota">5</span> <span class="comentarios">(10)</span>
                     </div>
-                </article>
-            </section>
+                </div>
+            </article>
+
+            <article class="excursao">
+                <figure>
+                    <img src="{{ url_for('static', filename='assets/petrolina.jpg') }}" alt="Vista áerea lateral de Petrolina - Petrolina/PE">
+                    <figcaption>Petrolina</figcaption>
+                </figure>
+                <div class="info">
+                    <p class="local">Conhecida pelo São João, pelo artesanato de Ana das Carrancas e pelos eventos à beira do São Francisco, Petrolina encanta com suas ilhas, vinhedos e paisagens únicas.</p>
+                    <div class="avaliacao">
+                        <span class="nota">4,5</span> <span class="comentarios">(5)</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="excursao">
+                <figure>
+                    <img src="{{ url_for('static', filename='assets/bonito.jpg') }}" alt="Vista áerea lateral de Petrolina - Petrolina/PE">
+                    <figcaption>Bonito</figcaption>
+                </figure>
+                <div class="info">
+                    <p class="local">A cidade é conhecida pelas suas cachoeiras e paisagens naturais que encantam moradores e visitantes, oferecendo cenários ideais para aventura e contemplação da natureza.</p>
+                    <div class="avaliacao">
+                        <span class="nota">4,8</span> <span class="comentarios">(8)</span>
+                    </div>
+                </div>
+            </article>
+            
         </section>
         
         <section id="apresentacao">
