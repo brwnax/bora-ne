@@ -28,12 +28,12 @@ def init_db():
     else:
         print('[INIT_DB] Banco já existe em ', DB_PATH)
 
-@app.route("/sobre")
+@app.route('/sobre')
 def sobre():
     return render_template("sobre.html")
 
-@app.route("/ajuda")
-def sobre():
+@app.route('/ajuda')
+def ajuda():
     return render_template("ajuda.html")
 
 @app.route('/', endpoint='home')
