@@ -251,7 +251,7 @@ body{
     background: #EFEFEF;
 }
 
-/*COMO FUNCIONA*/
+/*-------COMO FUNCIONA-------*/
 
 #apresentacao{
     display: flex;
@@ -431,7 +431,7 @@ button .avaliacao{
   color: var(--gray-medium);
 }
 
-/* sessão planos */
+/* -------sessão planos------- */
 .planos-container {
     max-width: 1100px;
     margin: 50px auto;
@@ -554,10 +554,22 @@ button .avaliacao{
 /* -------AREA DA AJUDA------- */
 
 /* -------------------- FAQ -------------------- */
+
+.faq-container{
+    padding-top: 120px;
+}
+
+
 #faq {
     margin-top: 100px;
     padding: 100px 0;
 }
+
+.faq-section h2 {
+    margin-bottom: 25px; 
+    text-align: left;  
+}
+
 
 .section-title {
     text-align: center;
@@ -579,12 +591,14 @@ button .avaliacao{
 }
 
 /* --------FAQ ITENS------- */
+
+
 #faq {
-    padding-top: 120px; /* aumenta o espaço acima da seção */
+    padding-top: 120px; 
 }
 
 .container {
-    padding-top: 160px; /* garante que todo o conteúdo fique abaixo do header */
+    padding-top: 160px;
 }
 
 .faq-container .faq-item {
