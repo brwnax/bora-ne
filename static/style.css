@@ -377,7 +377,7 @@ figcaption {
   transform: translateY(-10px);
 }
 
-.icones-direita img :hover{
+.icones-direita img:hover{
   transform: translateY(-10px);
 }
 
