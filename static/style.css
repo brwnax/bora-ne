@@ -302,6 +302,14 @@ figcaption {
     margin-bottom: 50px;
 }
 
+.icones-esquerda img:hover{
+  transform: translateY(-10px);
+}
+
+.icones-direita img :hover{
+  transform: translateY(-10px);
+}
+
 .informacao{
     display: flex;
     align-items: center;
@@ -317,7 +325,10 @@ figcaption {
     margin: 40px;
 }
 
-/*COMENTÁRIOS*/
+#tela-app:hover{
+  transform: translateY(-10px);
+}
+/*-------COMENTÁRIOS-------*/
 
 #avaliacoes{
     display: flex;
