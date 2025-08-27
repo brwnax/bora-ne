@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajuda</title>
+    <link rel="icon" href="{{ url_for('static', filename='assets/favicon.ico') }}" type="image/x-icon" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="#inicio"><img src="{{ url_for('static', filename='assets/logo-bora-ne.png') }}" alt="logo-bora-ne"></a>
+                <div class="nav-links">
+                    <a href="#inicio">Início</a>
+                    <a href="#apresentacao">Como Funciona</a>
+                    <a href="#planos">Planos</a>
+                    <a href="{{ url_for('sobre') }}">Sobre</a>
+                    <a href="#ajuda">Ajuda</a>
+
+                    <button class="button">Inscreva-se</button>   
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="faq-container">
+        <div class="faq-header">
+            <h1>Como podemos ajudar?</h1>
+            <p>Estamos aqui para responder suas dúvidas e fornecer o suporte que você precisa. Confira as perguntas frequentes ou entre em contato conosco.</p>
+        </div>
+
+        <div class="faq-section">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-item">
+                <h3>Como funciona o suporte?</h3>
+                <p>Nossa equipe está disponível através de telefone e e-mail. Nossa equipe está pronta para ajudar com qualquer dúvida ou problema.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Qual o horário de atendimento?</h3>
+                <p>Nossos atendimentos por telefone funcionam de segunda a sexta, das 9h às 18h. E-mails são respondidos em até 24 horas.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Quanto tempo leva para responder?</h3>
+                <p>E-mails são respondidos em até 24 horas. Telefones com atendimentos imediatos durante o horário comercial.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Posso agendar uma reunião?</h3>
+                <p>Sim! Entre em contato conosco através do telefone ou e-mail e nossa equipe agendará uma reunião conforme sua disponibilidade.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Como posso reportar um problema?</h3>
+                <p>Você pode reportar problemas através dos nossos canais de contato. Descreva o problema detalhadamente para um atendimento mais eficaz.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Vocês oferecem treinamentos?</h3>
+                <p>Sim, oferecemos treinamentos personalizados. Entre em contato para saber mais sobre nossas opções de capacitação.</p>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <div class="contact-item">
+                <h3>Telefone</h3>
+                <p>Fale diretamente com nossa equipe de suporte</p>
+                <p><strong>+55 (11) 9999-9999</strong></p>
+                <p>Segunda a Sexta, 9h às 18h</p>
+            </div>
+            <div class="contact-item">
+                <h3>E-mail</h3>
+                <p>Envie sua dúvida por e-mail</p>
+                <p><strong>suporte@empresa.com</strong></p>
+                <p>Resposta em até 24 horas</p>
+            </div>
+        </div>
+
+        <div class="message-section">
+            <h2>Ainda tem dúvidas?</h2>
+            <p>Nossa equipe está pronta para ajudar você. Entre em contato através dos canais acima ou envie uma mensagem.</p>
+            <button class="btn-message">Enviar Mensagem</button>
+        </div>
+    </section>
+
+    <footer>
+        <nav class="info-footer">
+            <ul>
+                <a href="#">Central de Ajuda</a>
+                <a href="#">Contato</a>
+                <a href="#">Política de Privacidade</a>
+            </ul>
+        </nav>
+        <p class="footer-bottom">
+            &copy; 2025 BoraNE. Todos os direitos reservados. Desenvolvido com ❤️ para o turismo nordestino.
+        </p>
+    </footer>
+    
+</body>
+</html>
