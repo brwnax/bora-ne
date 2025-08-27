@@ -36,7 +36,8 @@ body{
     backdrop-filter: blur(10px);
     z-index: 1000;
     transition: var(--transition);
-    margin-bottom: 40px;
+    top: 0;
+    left: 0;
 }
 
 .nav-container {    
@@ -51,6 +52,50 @@ body{
 .nav img{
     width: 100px;
     height: auto;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease;
+  background-color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: var(--black);
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 0;
+    max-height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .menu-toggle:checked ~ .nav-links {
+    max-height: 400px;
+    padding: 1rem 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
 }
 
 .nav-links{
@@ -175,6 +220,32 @@ body{
 
 .subscribe-box button:hover {
     background-color: #e6b800;
+}
+
+@media (max-width: 768px) {
+  #inicio {
+    padding: 20% 5%;
+    height: auto;
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .subscribe-box {
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+  }
+
+  .subscribe-box button {
+    width: 100%;
+  }
 }
 
 /*-------ROTAS-------*/
@@ -318,6 +389,29 @@ figcaption {
     margin: 40px;
 }
 
+@media (max-width: 992px) {
+  #apresentacao {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .icones-esquerda, .icones-direita {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #tela-app {
+    width: 250px;
+    margin: 20px 0;
+  }
+
+  .informacao {
+    justify-content: center;
+    margin: 15px 0;
+  }
+}
+
 /*COMENTÁRIOS*/
 
 #avaliacoes{
@@ -447,6 +541,15 @@ button .avaliacao{
   color: var(--gray-medium);
 }
 
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* -------sessão planos------- */
 .planos-container {
     max-width: 1100px;
@@ -565,6 +668,16 @@ button .avaliacao{
     left: 0;
     color: #22c55e;
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .planos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .plano {
+    width: 90%;
+  }
 }
 
 /* -------AREA DA AJUDA------- */
@@ -902,4 +1015,17 @@ footer{
     flex-basis: 100%;
     text-align: center;
     font-size: small;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .info-footer ul a {
+    display: block;
+    padding: 10px 0;
+  }
 }
