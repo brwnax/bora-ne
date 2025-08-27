@@ -177,79 +177,95 @@ body{
     background-color: #e6b800;
 }
 
-#rotas{
-    display: flex;
-    gap: 20px;
-    padding: 5% 8%;
-    flex-wrap: wrap;
-    justify-content: center;
+/*-------ROTAS-------*/
+
+.excursao-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
-.cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 0 15px 40px;
-    width: 100%;
-    margin: 0 auto;
+.excursao {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    border-radius: 50px;
-    overflow: hidden;
-    height: auto;
+.excursao:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.card img{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    aspect-ratio: 3/2;
-    object-fit: cover;
-    height: auto;
+figure {
+  margin: 0;
 }
 
-.card-content{
-    background-color: #1D1D1B;
-    padding: 2rem;
-    color: #EFEFEF;
-    height: auto;
-    text-align: justify;
-    align-content: flex-start;
-    border-radius: 50px 0 50px 50px;
-    position: relative;
-    margin-top: -30px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
-    flex-grow: 1;
-    flex-direction: column;
+img {
+  width: 100%;
+  height: auto;
 }
 
-.card-content h2{
-    padding-bottom: 1rem;
+figcaption {
+  padding: 10px;
+  background-color: #f0f0f0;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
-.card-content p{
-    padding-bottom: 1rem;
-    line-height: 1.5rem;
+.info {
+  padding: 20px;
 }
 
-.btn{
-    margin-top: auto;
-    background: #F5B70A;
-    align-self: flex-end;
-    color: #1D1D1B;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 999px;
-    display: inline-block;
+.local {
+  font-size: 1rem;
+  color: #777;
 }
 
-.btn:hover{
-    background: #EFEFEF;
+.avaliacao {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
 }
+
+.nota {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.comentarios {
+  color: #888;
+}
+
+.preco {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .excursao-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .excursao-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /*COMO FUNCIONA*/
 
