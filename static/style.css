@@ -267,7 +267,7 @@ figcaption {
 }
 
 
-/*COMO FUNCIONA*/
+/*-------COMO FUNCIONA-------*/
 
 #apresentacao{
     display: flex;
@@ -447,7 +447,7 @@ button .avaliacao{
   color: var(--gray-medium);
 }
 
-/* sessão planos */
+/* -------sessão planos------- */
 .planos-container {
     max-width: 1100px;
     margin: 50px auto;
@@ -570,10 +570,22 @@ button .avaliacao{
 /* -------AREA DA AJUDA------- */
 
 /* -------------------- FAQ -------------------- */
+
+.faq-container{
+    padding-top: 120px;
+}
+
+
 #faq {
     margin-top: 100px;
     padding: 100px 0;
 }
+
+.faq-section h2 {
+    margin-bottom: 25px; 
+    text-align: left;  
+}
+
 
 .section-title {
     text-align: center;
@@ -595,12 +607,14 @@ button .avaliacao{
 }
 
 /* --------FAQ ITENS------- */
+
+
 #faq {
-    padding-top: 120px; /* aumenta o espaço acima da seção */
+    padding-top: 120px; 
 }
 
 .container {
-    padding-top: 160px; /* garante que todo o conteúdo fique abaixo do header */
+    padding-top: 160px;
 }
 
 .faq-container .faq-item {
@@ -777,16 +791,24 @@ section {
 
 /* -------------------- VALORES -------------------- */
 
+#values .section-title h2 {
+    margin-top: -200px; /* remove o -130px que está “quebrando” o alinhamento */
+}
+
+
 #history {
     padding: 100px 0;
     margin-bottom: -10px; 
 }
+
+
 
 .section-title h2 {
     font-size: 2.5rem; /*título */
     font-weight: 700;
     color: #F5B70A;
     margin-bottom: 10px;
+    margin-top: -130px;
 }
 
 .section-title p {
