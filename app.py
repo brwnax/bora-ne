@@ -28,13 +28,6 @@ def init_db():
     else:
         print('[INIT_DB] Banco já existe em ', DB_PATH)
 
-@app.route('/sobre')
-def sobre():
-    return render_template("sobre.html")
-
-@app.route('/ajuda')
-def ajuda():
-    return render_template("ajuda.html")
 
 @app.route('/', endpoint='home')
 def home():
@@ -58,6 +51,15 @@ def subscribe():
         flash("Esse email já está inscrito!", "info")
     
     return redirect(url_for('home'))
+
+
+@app.route('/sobre')
+def sobre():
+    return render_template("sobre.html")
+
+@app.route('/ajuda')
+def ajuda():
+    return render_template("ajuda.html")
 
 if __name__ == '__main__':
     init_db()

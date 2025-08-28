@@ -221,6 +221,12 @@ body{
     background-color: #e6b800;
 }
 
+.email-info{
+    font-style: italic;
+    color: #555;
+    font-size: 0.8rem;
+}
+
 @media (max-width: 768px) {
   #inicio {
     padding: 20% 5%;

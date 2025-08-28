@@ -16,13 +16,12 @@
             <div class="nav-container">
                 <a href="#inicio"><img src="{{ url_for('static', filename='assets/logo-bora-ne.png') }}" alt="logo-bora-ne"></a>
                 <div class="nav-links">
-                    <a href="#inicio">Início</a>
-                    <a href="#rotas">Como Funciona</a>
-                    <a href="#planos">Planos</a>
+                    <a href="{{ url_for('home') }}">Início</a>
+                    <a href="{{ url_for('home') }}">Como Funciona</a>
+                    <a href="{{ url_for('home') }}"">Planos</a>
                     <a href="{{ url_for('sobre') }}">Sobre</a>
                     <a href="{{ url_for('ajuda') }}">Ajuda</a>
-
-                    <button class="button">Inscreva-se</button>   
+  
                 </div>
             </div>
         </nav>
