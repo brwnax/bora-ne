@@ -249,14 +249,14 @@ body{
 
 /*-------ROTAS-------*/
 
-.excursao-container {
+.rotas-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 20px;
   padding: 20px;
 }
 
-.excursao {
+.rotas {
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
@@ -264,7 +264,7 @@ body{
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.excursao:hover {
+.rotas:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -309,12 +309,6 @@ figcaption {
   color: #888;
 }
 
-.preco {
-  margin-top: 15px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #333;
-}
 
 @media (max-width: 768px) {
   h1 {
