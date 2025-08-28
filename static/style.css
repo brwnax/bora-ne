@@ -255,6 +255,10 @@ body{
 
 /*-------ROTAS-------*/
 
+.comoFunciona{
+    margin-top: 100px;
+}
+
 .rotas-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -348,6 +352,7 @@ figcaption {
     min-height: 80vh;
     padding: 5% 0;
     flex-wrap: wrap;
+    margin-top: -70px;
   
 }
 
