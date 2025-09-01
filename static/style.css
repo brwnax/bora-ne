@@ -261,6 +261,8 @@ body{
 
 .rotas-container {
   display: grid;
+  align-self: center;
+  justify-self: center;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 20px;
   padding: 20px;
@@ -289,6 +291,7 @@ img {
 }
 
 figcaption {
+
   padding: 10px;
   background-color: #f0f0f0;
   font-size: 1rem;
