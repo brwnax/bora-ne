@@ -238,6 +238,8 @@ body{
   #inicio {
     padding: 20% 5%;
     height: auto;
+    background-size: auto;
+    background-position: right;
   }
 
   .main-title {
