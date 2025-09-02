@@ -414,6 +414,24 @@ figcaption {
 #tela-app:hover{
   transform: translateY(-10px);
 }
+
+@media (max-width: 600px) {
+    #tela-app {
+        width: 250px;
+    }
+
+    .informacao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icones-esquerda img,
+    .icones-direita img {
+        width: 60px; /* menor para caber melhor */
+        margin: 15px 0;
+    }
+}
+
 /*-------COMENTÁRIOS-------*/
 @media (max-width: 992px) {
   #apresentacao {
