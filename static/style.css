@@ -238,9 +238,6 @@ body{
   #inicio {
     padding: 20% 5%;
     height: auto;
-
-    background-size: auto;
-    background-position: right;
   }
 
   .main-title {
@@ -914,7 +911,6 @@ button .avaliacao{
 
 /* -------AREA DO SOBRE------- */
 
-
 /* -------------------- SECTIONS -------------------- */
 section {
     padding: 60px 0;
@@ -926,13 +922,16 @@ section {
 }
 
 .section-title h2 {
-    font-size: 2.2rem;
-    color: #2c3e50;
-    margin-bottom: 15px;
+    font-size: 2.5rem; /* título */
+    font-weight: 700;
+    color: #F5B70A;
+    margin-bottom: 10px;
+    margin-top: 0; /* evita colar no topo */
 }
 
 .section-title p {
-    color: #7f8c8d;
+    font-size: 1.5rem; /* subtítulo */
+    color: #666;
     max-width: 700px;
     margin: 0 auto;
 }
@@ -969,33 +968,14 @@ section {
     display: block;
 }
 
-/* -------------------- VALORES -------------------- */
-
-#values .section-title h2 {
-    margin-top: -200px; /* remove o -130px que está “quebrando” o alinhamento */
-}
-
-
 #history {
     padding: 100px 0;
-    margin-bottom: -10px; 
+    margin-bottom: 60px; /* cria espaçamento saudável antes dos valores */
 }
 
-
-
-.section-title h2 {
-    font-size: 2.5rem; /*título */
-    font-weight: 700;
-    color: #F5B70A;
-    margin-bottom: 10px;
-    margin-top: -130px;
-}
-
-.section-title p {
-    font-size: 1.5rem; /*subtítulo */
-    color: #666;
-    max-width: 700px;
-    margin: 0 auto;
+/* -------------------- VALORES -------------------- */
+#values .section-title h2 {
+    margin-top: 0;
 }
 
 .values-grid {
@@ -1022,17 +1002,7 @@ section {
 .value-icon {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #F5B70A;
-}
-
-.value-card h3 {
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-    color: #2c3e50;
-}
-
-.value-card p {
-    color: #7f8c8d;
+    color: #e6a609;
 }
 
 /* FOOTER */
